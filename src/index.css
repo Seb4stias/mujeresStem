@@ -1,0 +1,491 @@
+/* Estilos Globales */
+
+/*odio css, no soy bueno haciendo las pag bonitas, o me quedan muy grandes las letras o me quedan muy chicas AAAAAAaaaAAAaaAAAAA*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+
+
+
+
+/* Header y Navegación */
+#main-header {
+    background-color: #333;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 960px; /* Igual que .container */
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: background-color 0.3s;
+}
+
+.nav-links a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+
+
+
+
+/* Sección Inicio (Hero) */
+.hero {
+    background-color: #f4f4f4;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 3.5em;
+    margin-bottom: 15px;
+    
+}
+
+.hero-content p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+/* IMAGENES DENTRO DE CONTAINER/HERO */
+.hero-image, .container-image { /* Estilo para las imágenes dentro de hero y container */
+    max-width: 80%; /* Para que la imagen sea responsiva */
+    height: auto;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    padding: 15px 20px;
+    text-decoration: none;
+    border-radius: 7px;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #0056b3;
+}
+
+
+
+
+
+
+/* Sección Quiénes Somos */
+.quienes-somos-section {
+    background-color: #e9ecef;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.quienes-somos-section h2 {
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+
+.quienes-somos-section h3 {
+    font-size: 1.5em;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.quienes-somos-section ul {
+    list-style: disc; /* Usar viñetas estándar */
+    display: inline-block; /* Para centrar la lista */
+    text-align: left; /* Alinea el texto dentro de la lista a la izquierda */
+    margin-top: 15px;
+    padding-left: 20px; /* Espacio para las viñetas */
+}
+
+.quienes-somos-section ul li {
+    margin-bottom: 8px;
+}
+
+
+
+
+/* SECCION DE HISTORIAS DE ÉXITO  */
+.success-stories-section {
+    background-color: #f4f4f4; /* color base  */
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.success-stories-section h2 {
+    font-size: 2em;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.success-stories-section p {
+    font-size: 1.1em;
+    margin-bottom: 30px;
+}
+
+.members-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Columnas responsivas */
+    gap: 30px; /* Más espacio entre tarjetas (tienen covid...) */
+    padding: 20px 0;
+}
+
+.member-card {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 25px; /* Bordes más redondeados (es feo si se coloca mas del 30%) */
+    padding: 25px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15); /* Sombra más pronunciada pero suave */
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    display: flex; /* Para centrar contenido verticalmente si es necesario */
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.member-card:hover {
+    transform: translateY(-25px); /* Efecto de elevación más notable */
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+.member-card img {
+    width: 150px; /* Imagen un poco más grande */
+    height: 150px;
+    border-radius: 22%; /* ""Circular"" entre comillas (queda feo circular (dejar en 22%), prefiero que parescan cartas pokemon ), (igual y coloco una full art ) */
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 4px solid #007bff; /* Borde más distintivo */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Sombra para la imagen */
+}
+
+.member-card h3 {
+    color: #0056b3; /* borde de la foto  */
+    margin-bottom: 10px;
+    font-size: 1.3em;
+}
+
+.member-card .role {
+    font-weight: bold;
+    color: #666;
+    font-size: 0.95em;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.member-card p {
+    font-size: 1em;
+    color: #555;
+    line-height: 1.6;
+    flex-grow: 2; /* Para que el párrafo ocupe el espacio restante */
+}
+
+/* FIN SECCION DE HISTORIAS DE ÉXITO */
+
+
+
+
+
+/* Sección Contacto y Formulario */
+.contact-section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.contact-section h2 {
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+
+.contact-section h3 {
+    font-size: 1.5em;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.contact-section ul {
+    list-style: none; /* Sin viñetas para la problemática/solución */
+    padding: 0;
+    text-align: left;
+    margin: 15px auto;
+    max-width: 700px;
+}
+
+.contact-section ul li {
+    margin-bottom: 8px;
+    padding-left: 20px; /* Espacio para el guion sin gracia */
+    position: relative;
+}
+
+.contact-section ul li::before {
+    content: '- '; /* un guion sin gracia */
+    position: absolute;
+    left: 0;
+    color: #007bff; /*color del guion sin gracia  */
+}
+
+
+#formularioContenedor {
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-top: 30px;
+}
+
+#formularioContenedor table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#formularioContenedor td {
+    padding: 10px;
+    border: 1px solid #eee;
+    vertical-align: top;
+}
+
+#formularioContenedor input[type="text"],
+#formularioContenedor input[type="number"],
+#formularioContenedor input[type="email"],
+#formularioContenedor input[type="date"],
+#formularioContenedor select {
+    width: calc(100% - 20px); /* Ajuste del padding por si las moscas */
+    padding: 8px;
+    margin-bottom: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#formularioContenedor input[type="radio"],
+#formularioContenedor input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+#formularioContenedor label {
+    margin-right: 15px;
+}
+
+.error-message {
+    color: red;
+    font-size: 0.9em;
+    margin-top: 5px;
+    display: block;
+    min-height: 18px; /* Para mantener el espacio */
+}
+
+#formularioContenedor button {
+    background-color: #28a745; /* Color verde para el botón de enviar */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+#formularioContenedor button:hover {
+    background-color: #218838;
+}
+
+
+
+
+
+
+
+/* Sección Proyectos */
+.proyectos-section {
+    background-color: #f8f9fa;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.proyectos-section h2 {
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.project-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: left;
+}
+
+.project-card h3 {
+    margin-bottom: 10px;
+    color: #007bff;
+}
+
+
+
+
+
+/* Tabla simple  */
+.simple-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    overflow: hidden; /* Para que los bordes redondeados funcionen */
+}
+
+.simple-table th, .simple-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+.simple-table th {
+    background-color: #6c757d;
+    color: white;
+}
+
+.simple-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.simple-table tr:hover {
+    background-color: #e9e9e9;
+}
+
+
+
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 30px;
+}
+
+footer p {
+    font-size: 0.9em;
+}
+
+
+
+
+
+/* Estilos Responsivos */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+    }
+
+    .nav-links {
+        margin-top: 15px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-content h1 {
+        font-size: 2em;
+    }
+
+    .hero-image, .container-image {
+        max-width: 95%;
+    }
+
+    .members-grid, .project-grid {
+        grid-template-columns: 1fr; /* Una columna en pantallas pequeñas */
+    }
+
+    #formularioContenedor table,
+    #formularioContenedor tr,
+    #formularioContenedor td {
+        display: block;
+        width: 100%;
+    }
+
+    #formularioContenedor td {
+        border: none;
+        padding: 5px 0;
+    }
+}
+
+
+
+
+
+ 
+.hero-image {
+  display: inline-block;
+  width: 450px; /* Ajusta el ancho según necesites o remueve si ya lo tienes inline en la etiqueta */
+  height: 450px; /* Para mantener la proporción si ajustas el ancho */
+  margin-right: 10px; /* O el espaciado que desees entre imágenes */
+}
+
+/* Si las imágenes son demasiado grandes y fuerzan el ancho del contenedor */
+.Hero-content { /* O la clase del div que contiene el texto e imágenes */
+  display: flex; /* Esto también podría ayudar a controlar el flujo */
+  flex-wrap: wrap; /* Si quieres que las imágenes pasen a la siguiente línea si no hay suficiente espacio */
+  align-items: center; /* Para alinear verticalmente las imágenes con el texto si es necesario */
+}
+
+
