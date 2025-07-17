@@ -8,7 +8,7 @@ const Hero = ({ onJoinUsClick, showForm }) => {
         <h1>Nuestra primera charla </h1>
         <p>nuestra primera charla fue hecha el dia 11 de junio, la cual tuvo invitados como el liceo Vate Vicente Huidobro,</p>
        <p>en esta charla se hablo de como nuestro club ayudara a futuras mujeres stem para dominar el mundo.</p>
-        <img src={heroImage} alt="imagen de las mujeres stem" height ="600px" className="hero-image" /> <br />
+        <img src={heroImage} alt="imagen de las mujeres stem" height ="250px" className="hero-image" /> <br />
         
 
         {!showForm && (

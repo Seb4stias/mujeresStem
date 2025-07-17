@@ -16,6 +16,8 @@ const Contacto = ({ onFormSubmit, showForm }) => {
 
   const [errors, setErrors] = useState({});
 
+
+  
   const handleChange = (e) => {
     const { name, value, type, checked } = e.target;
     setFormData((prevData) => ({
@@ -102,6 +104,8 @@ const Contacto = ({ onFormSubmit, showForm }) => {
   };
 
 
+
+
   //devuelve todo lo que este componente ha hecho en la pag (profe si lee esto regaleme una decima JSDAFJDSF mentira no se enoje  )
 
   //dios santo voy a entrar en un colapso neuronal al comentar todo 
@@ -125,7 +129,7 @@ const Contacto = ({ onFormSubmit, showForm }) => {
                     </td>
                   </tr>
                   <tr>
-                    <td><label htmlFor="rut">RUT:</label></td>
+                    <td><label htmlFor="rut">RUT</label></td>
                     <td>
                       <input type="text" id="rut" name="rut" placeholder="Ej: 12.345.678-9" value={formData.rut} onChange={handleChange} />
                       <span className="error-message" id="errorRut">{errors.rut}</span>
@@ -155,7 +159,7 @@ const Contacto = ({ onFormSubmit, showForm }) => {
                     </td>
                   </tr>
                   <tr>
-                    <td><label htmlFor="profesion">Profesión/Área de Interés:</label></td>
+                    <td><label htmlFor="profesion">profesion</label></td>
                     <td>
                       <select id="profesion" name="profesion" value={formData.profesion} onChange={handleChange}>
                         <option value="">-- Selecciona una opción --</option>

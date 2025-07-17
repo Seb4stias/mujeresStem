@@ -18,9 +18,10 @@ const Header = () => {
         <ul className="nav-links">
           <li><a href="#inicio" onClick={(e) => handleNavLinkClick(e, 'inicio')}>Inicio</a></li>
           <li><a href="#quienes-somos" onClick={(e) => handleNavLinkClick(e, 'quienes-somos')}>Quiénes Somos</a></li>
-          <li><a href="#historias-exito" onClick={(e) => handleNavLinkClick(e, 'historias-exito')}>Historias de Éxito</a></li>
+          <li><a href="#historias-exito" onClick={(e) => handleNavLinkClick(e, 'historias-exito')}>★Historias de Éxito★</a></li>
           <li><a href="#proyectos" onClick={(e) => handleNavLinkClick(e, 'proyectos')}>Proyectos</a></li>
           <li><a href="#contacto" onClick={(e) => handleNavLinkClick(e, 'contacto')}>Contacto</a></li>
+          <li><a href="#noticias" onClick={(e) => handleNavLinkClick(e, 'noticias')}>☆Noticias☆</a></li>
         </ul>
       </nav>
     </header>
